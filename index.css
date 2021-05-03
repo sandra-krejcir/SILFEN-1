@@ -120,6 +120,11 @@ li {
     object-fit: cover;
 }
 
+.hello {
+    margin-right: 50px;
+    margin-top: 100px;
+}
+
 .down {
 border-radius: 50%;
 position: absolute;
@@ -129,6 +134,29 @@ border: 1px solid black;
 background-color: white;
 }
 
+.here {
+font-size: 2rem;
+letter-spacing: 0.2em;
+text-align: right;
+color: #fff;
+text-transform: uppercase;
+padding-bottom: 25px;
+}
+
+.buttoncol {
+    display:block;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: #fff;
+    width: 250px;
+height: 50px;
+background: black;
+border: none;
+position: relative;
+float: right;
+}
+
 /*
  * ----------------------------------------------------------------------------
  * NEWIN
@@ -136,9 +164,8 @@ background-color: white;
  */
 
  #newin {
-    padding: 0 50px 0 50px;
-    margin-top: 65vh;
-    height: 100vh;
+    padding: 35px 50px 35px 50px;
+    margin-top: 200px;
   }
 
   .newsummer {
@@ -263,3 +290,61 @@ font-size: 36px;
         color: #a3a3a3;
      }
 
+  /*
+ * ----------------------------------------------------------------------------
+ * CATEGORIES
+ * ----------------------------------------------------------------------------
+ */
+
+     .allcategories {
+        min-width: 800px;
+        padding: 35px 50px 35px 50px;
+        list-style: none;
+        display: grid;
+        gap: 20px;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(3,minmax(150px, 1fr));
+      }
+
+      .cat {
+        width: 250px;
+    }
+
+    .category {
+        margin: 0 auto; 
+    }
+
+      /*
+ * ----------------------------------------------------------------------------
+ * SILFEN & SYSTAINABILITY
+ * ----------------------------------------------------------------------------
+ */
+
+ .silfen {
+    padding: 0 50px 0 50px;
+   background-color: #E9E9E9;
+ }
+
+ .silfensus {
+    padding-top: 10px;
+    font-size: 19px;
+    letter-spacing: 0.15em;
+    text-align: left;
+    grid-area: two;
+    width: 400px;
+ }
+
+ .ss {
+    padding: 35px 0 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "one two";
+  }
+
+.pic {
+    grid-area: one;
+    margin: 0 auto;
+}
