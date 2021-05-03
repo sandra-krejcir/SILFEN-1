@@ -197,3 +197,69 @@ border: none;
  * SHOP OUR LOOKS
  * ----------------------------------------------------------------------------
  */
+ .looks {
+    padding: 0 50px 0 50px;
+   background-color: #E9E9E9;
+ }
+
+ .text {
+    padding-top: 35px;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: #000;
+ }
+
+ .display {
+    padding: 35px 0 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "one two";
+  }
+.pica {
+    grid-area: one;
+}
+
+.pippi {
+    grid-area: two;
+    margin: 0 auto;
+}
+ .fresh {
+font-size: 36px;
+    letter-spacing: 0.3em;
+    color: #000;
+ }
+
+ .caption {
+    font-size: 7px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    color: #a3a3a3;
+ }
+
+ .ulrikke {
+    grid-area: one;
+    margin: 0 auto;
+    text-align-last: right;
+}
+
+.piul {
+    grid-area: two; 
+}
+
+.classic {
+    font-size: 36px;
+        letter-spacing: 0.3em;
+        color: #000;
+     }
+    
+.caption2 {
+        font-size: 7px;
+        letter-spacing: 0.2em;
+        color: #a3a3a3;
+     }
+
