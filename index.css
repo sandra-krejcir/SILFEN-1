@@ -4,6 +4,29 @@ body {
     background-color: #F5F5F5;
 }
 
+button {
+    font-family: "Raleway", sans-serif;
+    font-size: 1vw;
+    background-color: #000000;
+    border-color: #000000;
+    color: white;
+    letter-spacing: 2.5px;
+    box-shadow: 0;
+    width: 250px;
+    height: 50px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background-color: white;
+    border-color: white;
+    color: #000000;
+    border-color: #000000;
+    border-width: 1.5px;
+    box-shadow: 0;
+    transition: ease-in 0.2s;
+  }
+
 textarea:focus, input:focus{
     outline: none;
   }
@@ -14,6 +37,13 @@ textarea:focus, input:focus{
   
   .hidden {
     display: none;
+  }
+
+  #navbar {
+      position: fixed;
+      min-width: 100%;
+      top: 0;
+      transition: ease-in-out 1s;
   }
 /*
  * ----------------------------------------------------------------------------
@@ -64,7 +94,7 @@ span {
 nav {
     margin: 0;
     max-width: 100%;
-    height: 200px;
+    height: 175px;
     flex-direction: column;
     background-size: cover;
     background: rgba(0, 0, 0, 0.15);
@@ -75,9 +105,11 @@ z-index: 2;
 }
 
 nav:hover {
-    background: rgba(0, 0, 0, 0.66);
-    transition: ease-in 0.3s;
-}
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.633);
+    transition: ease-in 0.2s;
+  }
+ 
 
 input {
 font-family: "Raleway", sans-serif;
@@ -122,7 +154,7 @@ li {
 
 .hello {
     margin-right: 50px;
-    margin-top: 100px;
+    margin-top: 350px;
 }
 
 .down {
@@ -132,6 +164,10 @@ top: 94vh;
 left: 50%;
 border: 1px solid black;
 background-color: white;
+color: black;
+width: 25px;
+height: 25px;
+font-size: 15px;
 }
 
 .here {
@@ -144,15 +180,6 @@ padding-bottom: 25px;
 }
 
 .buttoncol {
-    display:block;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    text-align: center;
-    color: #fff;
-    width: 250px;
-height: 50px;
-background: black;
-border: none;
 position: relative;
 float: right;
 }
@@ -207,16 +234,9 @@ float: right;
   }
 
   .bw {
-    margin:0 auto; 
+    margin: 0 auto; 
     display:block;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    text-align: center;
-    color: #fff;
-    width: 250px;
-height: 50px;
-background: black;
-border: none;
+    
   }
 
   /*
@@ -304,6 +324,7 @@ font-size: 36px;
         gap: 20px;
         grid-auto-flow: dense;
         grid-template-columns: repeat(3,minmax(150px, 1fr));
+        
       }
 
       .cat {
