@@ -35,16 +35,6 @@ textarea:focus, input:focus{
     outline: none;
   }
   
-  .hidden {
-    display: none;
-  }
-
-  #navbar {
-      position: fixed;
-      min-width: 100%;
-      top: 0;
-      transition: ease-in-out 1s;
-  }
 /*
  * ----------------------------------------------------------------------------
  * ANNOUNCEMENT BAR
@@ -104,8 +94,20 @@ padding: 0 50px 0 50px;
 z-index: 2;
 }
 
+.hidden {
+    display: none;
+  }
+
+  #navbar {
+      z-index: 5;
+    position: fixed;
+    min-width: 100%;
+    top: 0;
+    transition: ease-in-out 0.5s;
+}
 .blurred {
     backdrop-filter: blur(5px);
+    transition: ease-in-out 0.1s;
 }
 
 nav:hover {
@@ -156,7 +158,7 @@ li {
     object-fit: cover;
 }
 
-.hello {
+.newinpage {
     margin-right: 50px;
     margin-top: 350px;
 }
@@ -346,7 +348,7 @@ font-size: 36px;
  */
 
  .silfen {
-    padding: 0 50px 0 50px;
+    padding: 0 50px 35px 50px;
    background-color: #E9E9E9;
  }
 
@@ -373,3 +375,83 @@ font-size: 36px;
     grid-area: one;
     margin: 0 auto;
 }
+
+.cuc {
+    padding-left: 15px;
+}
+
+      /*
+ * ----------------------------------------------------------------------------
+ * FOOTER
+ * ----------------------------------------------------------------------------
+ */
+
+footer {
+    width: 100vw;
+    overflow: hidden;
+    margin: 35px 0 35px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+    
+   .footer-line {
+    display: flex;
+    justify-content: center;
+    background-color: #aed5b2;
+    width: 90vw;
+    height: 3px;
+    border-radius: 10px;
+   }
+    
+   .category-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+   }
+    
+   .footer-category {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+   }
+    
+   .footer-title {
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 35px;
+    margin-bottom: 8px;
+   }
+    
+   .footer-link {
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+   }
+    
+   .footer-link:hover {
+    color: rgb(122, 122, 122);
+   }
+    
+   .footer-pic {
+    display: flex;
+    flex-direction: row;
+    gap: 15p x;
+   }
+    
+   .footer-social {
+    display: flex;
+    width: 30px;
+    height: auto;
+   }
+    
+   .footer-pay {
+    height: 20px;
+    width: auto;
+   }
+    
+   .address-footer {
+    text-align: center;
+   }
+   
