@@ -320,7 +320,9 @@ hr {
 }
 
 
-.w3-animate-fading {animation:fading 10s infinite ease-in}
+.w3-animate-fading {
+  animation:fading 10s infinite ease-in
+}
 
 @keyframes fading {
     0%{opacity:0}
@@ -368,7 +370,7 @@ float: right;
 
  #newin {
     padding: 0 50px 35px 50px;
-    margin-top: 35vh;
+    margin-top: 30vh;
   }
 
   .newsummer {
