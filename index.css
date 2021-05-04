@@ -275,6 +275,7 @@ float: right;
   }
 .pica {
     grid-area: one;
+    padding-left: 25px;
 }
 
 .pippi {
