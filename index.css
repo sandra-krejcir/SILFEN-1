@@ -6,7 +6,7 @@ body {
 
 button {
     font-family: "Raleway", sans-serif;
-    font-size: 1vw;
+    font-size: 0.6rem;
     background-color: #000000;
     border-color: #000000;
     color: white;
@@ -144,6 +144,34 @@ li {
     letter-spacing: 0.1em;
 }
 
+ul a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+ul a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+ul a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
 /*
  * ----------------------------------------------------------------------------
  * BCKGR
@@ -164,16 +192,15 @@ li {
 }
 
 .down {
-border-radius: 50%;
 position: absolute;
-top: 94vh;
+top: 93vh;
 left: 50%;
-border: 1px solid black;
-background-color: white;
-color: black;
-width: 25px;
-height: 25px;
-font-size: 15px;
+
+display:block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
 }
 
 .here {
@@ -218,7 +245,7 @@ float: right;
     gap: 20px;
     grid-auto-flow: dense;
     grid-template-columns: repeat(4,minmax(150px, 1fr));
-    text-align-last: justify;
+    text-align-last: center;
   }
   
   .bag {
@@ -230,7 +257,7 @@ float: right;
     letter-spacing: 0.06em;
     color: #000;
     font-weight: normal;
-    text-align-last: left;
+    text-align-last: center;
   }
 
   h2 {font-size: 12px;
@@ -242,8 +269,16 @@ float: right;
   .bw {
     margin: 0 auto; 
     display:block;
-    
   }
+
+.captions {
+    display: inline-flex;
+    padding: 10px 0;
+}
+
+.smalltext {
+    margin-right: 10px;
+}
 
   /*
  * ----------------------------------------------------------------------------
@@ -331,7 +366,6 @@ font-size: 36px;
         gap: 20px;
         grid-auto-flow: dense;
         grid-template-columns: repeat(3,minmax(150px, 1fr));
-        
       }
 
       .cat {
@@ -388,7 +422,7 @@ font-size: 36px;
  */
 
 footer {
-    width: 100vw;
+    max-width: 100vw;
     overflow: hidden;
     margin: 35px 0 35px 0;
     display: flex;
