@@ -105,6 +105,7 @@ z-index: 2;
     top: 0;
     transition: ease-in-out 0.5s;
 }
+
 .blurred {
     backdrop-filter: blur(5px);
     transition: ease-in-out 0.1s;
@@ -129,8 +130,10 @@ border: solid white 1px;
 }
 
 .logo {
-    width: 350px;
+    width: 300px;
     padding-top: 20px;
+    position: relative;
+    left: -6%;
 }
 
 li {
