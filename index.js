@@ -1,23 +1,17 @@
- var picPaths = ['img/bck1.png','img/bck2.png','img/bck3.png'];
-            var curPic = -1;
-            //preload the images for smooth animation
-            var imgO = new Array();
-            for(i=0; i < picPaths.length; i++) {
-                imgO[i] = new Image();
-                imgO[i].src = picPaths[i];
-            }
+var myIndex = 0;
+carousel();
 
-            function swapImage() {
-                curPic = (++curPic > picPaths.length-1)? 0 : curPic;
-                imgCont.src = imgO[curPic].src;
-                setTimeout(swapImage,2000); 
-
-            }
-
-            window.onload=function() {
-                imgCont = document.getElementById('imgBanner');
-                swapImage();
-            }
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("imgBanner");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;

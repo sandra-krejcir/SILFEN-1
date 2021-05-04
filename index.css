@@ -35,7 +35,6 @@ textarea:focus, input:focus{
     outline: none;
   }
 
- 
 /*
  * ----------------------------------------------------------------------------
  * ANNOUNCEMENT BAR
@@ -180,14 +179,27 @@ ul a:hover:after {
  * BCKGR
  * ----------------------------------------------------------------------------
  */
-#imgBanner {
+.imgBanner {
     height: 90%;
     width: 100%;
     z-index: -1;
     position: absolute;
     top: 38px;
     object-fit: cover;
+    opacity: 1;
+        transition: opacity 2s ease-in-out;
+        -moz-transition: opacity 2s ease-in-out;
+        -webkit-transition: opacity 2s ease-in-out;
 }
+
+
+.w3-animate-fading {animation:fading 10s infinite ease-in}
+
+@keyframes fading {
+    0%{opacity:0}
+    10%{opacity:1}
+    90%{opacity:1}
+    100%{opacity:0}}
 
 .newinpage {
     margin-right: 50px;
@@ -198,10 +210,11 @@ ul a:hover:after {
 position: absolute;
 top: 93vh;
 left: 50%;
+margin: auto;
 
 display:block;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   border: 1px solid white;
 }
