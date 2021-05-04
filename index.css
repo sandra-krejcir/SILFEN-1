@@ -257,6 +257,11 @@ input[type=text]:focus {
 
 }
 
+label {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
@@ -295,7 +300,7 @@ hr {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
+  .signupbtn {
      width: 100%;
   }
 }
