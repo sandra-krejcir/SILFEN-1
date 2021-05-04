@@ -34,7 +34,8 @@ textarea:focus, input:focus{
   *:focus {
     outline: none;
   }
-  
+
+ 
 /*
  * ----------------------------------------------------------------------------
  * ANNOUNCEMENT BAR
@@ -112,7 +113,6 @@ z-index: 2;
 }
 
 nav:hover {
-    cursor: pointer;
     background-color: rgba(0, 0, 0, 0.633);
     transition: ease-in 0.2s;
   }
@@ -180,7 +180,7 @@ ul a:hover:after {
  * BCKGR
  * ----------------------------------------------------------------------------
  */
-.background {
+#imgBanner {
     height: 90%;
     width: 100%;
     z-index: -1;
