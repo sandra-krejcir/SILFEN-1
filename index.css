@@ -217,7 +217,7 @@ ul a:hover:after {
 
 /*
  * ----------------------------------------------------------------------------
- * BCKGR
+ * HERO
  * ----------------------------------------------------------------------------
  */
 .imgBanner {
@@ -244,7 +244,7 @@ ul a:hover:after {
 
 .newinpage {
     margin-right: 50px;
-    margin-top: 350px;
+    margin-top: 50vh;
 }
 
 .down {
@@ -282,7 +282,7 @@ float: right;
 
  #newin {
     padding: 0 50px 35px 50px;
-    margin-top: 200px;
+    margin-top: 35vh;
   }
 
   .newsummer {
