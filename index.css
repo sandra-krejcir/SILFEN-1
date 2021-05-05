@@ -192,8 +192,23 @@ ul a:hover:after {
  * ----------------------------------------------------------------------------
  */
 
+ h3 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+ }
+
+ .signuptext {
+   font-size: 10px;
+   letter-spacing: 0.15em;
+   width: 350px;
+   margin: auto;
+   line-height: 1.3em;
+ }
+
  #newsletter {
-  width: 70px;
+  width: 60px;
   height: 45px;
   border-radius: 26px 0px 0px 26px;
   background: #fff;
@@ -203,8 +218,9 @@ ul a:hover:after {
   right: 0;
   background-image: url(img/mail.png);
   background-repeat: no-repeat;
-  background-size: 35px;
+  background-size: 30px;
   background-position: center;
+  border: solid black 1px;
  }
 
  #newsletter:hover {
@@ -217,8 +233,8 @@ ul a:hover:after {
 /* Full-width input fields */
 input[type=text] {
   width: 60%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  padding: 10px;
+  margin: 5px 0 15px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
@@ -231,7 +247,7 @@ input[type=text]:focus {
 }
 
 
- .signupbtn {
+.signupbtn {
   float: center;
   width: 50%;
 }
@@ -245,14 +261,15 @@ input[type=text]:focus {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 6; /* Sit on top */
   left: 0;
   top: 0;
-  width: 500px; /* Full width */
-  height: 450px; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  width: 500px; 
+  height: 450px; 
+  overflow: hidden;
   padding-top: 250px;
-  margin-left: 100px;
+  margin-left: 0;
+  padding-left: 30vw;
   text-align-last: center;
 
 }
@@ -430,13 +447,17 @@ float: right;
     margin-right: 10px;
 }
 
+.product :hover {
+  cursor: pointer;
+}
+
   /*
  * ----------------------------------------------------------------------------
  * SHOP OUR LOOKS
  * ----------------------------------------------------------------------------
  */
  .looks {
-    padding: 0 50px 0 50px;
+    padding: 0 100px 0 100px;
    background-color: #E9E9E9;
  }
 
@@ -460,7 +481,7 @@ float: right;
   }
 .pica {
     grid-area: one;
-    padding-left: 25px;
+    margin-left: 75px;
 }
 
 .pippi {
