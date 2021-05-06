@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body class="product-body">
+    <header>
+      <div id="navbar">
+        <section
+          id="section-announcement"
+          data-section-id="announcement"
+          data-section-type="announcement-bar"
+        >
+          <div class="AnnouncementBar">
+            <div class="AnnouncementBar__Wrapper">
+              <p class="AnnouncementBar__Content">
+                <span>100% SUSTAINABLE PRODUCTION. ALWAYS.</span>
+              </p>
+            </div>
+          </div>
+
+          <nav id="navigation">
+            <input
+              id="search"
+              type="search"
+              name="search"
+              placeholder="SEARCH by name, color or collection"
+            />
+
+            <img class="logo" src="img/white-logo.svg" alt="logo" />
+            <span>CART(0)</span>
+            <br />
+            <ul>
+              <li><a href="">SHOP</a></li>
+              <li><a href="">COLLECTIONS</a></li>
+              <li><a href="">NEW IN</a></li>
+              <li><a href="">ABOUT US</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </header>
+    <main>
+      <div class="pic-group">
+        <div class="column-bag">
+          <img src="daria-img/bag-front.png" class="pic-left" />
+          <img src="daria-img/greenbag-front2.png" class="pic-left" />
+          <img src="daria-img/front-pic.png" class="pic-left" />
+        </div>
+
+        <div class="pic-selector"></div>
+
+        <img src="daria-img/bag.png" class="main-pic" />
+
+        <div class="text-wrap">
+          <h1 class="product-title">ULRIKKE RECYCLED</h1>
+
+          <p class="product-price">€55,92</p>
+
+          <p class="product-detail">
+            The ULRIKKE bag is a signature style by SILFEN. Made in recycled
+            nylon with silver metal hardware. The 90’s shape beautifully
+            combines a everyday bag with a party look. The single handle is
+            adjustable and make the bag perfect for shoulder bag or cross-body
+            use. Ulrikke comes with matching lining and an internal pocket. A
+            must have bag!
+            <br />
+            <br />The recycled nylon is primarily made of plastic bottles
+            collected from the oceans all over the world. With this bag you can
+            both look your best and keep our planet safe a little more.
+
+            <br />
+          </p>
+
+          <p class="product-detail2"><b>Material:</b></p>
+          <p class="product-detail3">100 % rPET (Polyethylenterephthalat)</p>
+          <p class="product-detail2"><b>Dimensions:</b></p>
+          <p class="product-detail3">30 x 6 x 20 cm</p>
+          <p class="product-detail2"><b>Max. strap length:</b></p>
+          <p class="product-detail3">80 cm</p>
+
+          <div class="productbuttonwrap">
+            <a href="shipping-info.html">
+              <button class="buy-product">BUY IT NOW</button></a
+            >
+            <button class="add-cart">ADD TO CART</button>
+          </div>
+
+          <h2>CHOOSE COLOR</h2>
+
+          <div class="available-products">
+            <img src="daria-img/bag2-front.png" class="bag-pic" />
+            <img src="daria-img/bag3-front.png" class="bag-pic" />
+            <img src="daria-img/bag4-front.png" class="bag-pic" />
+            <img src="daria-img/bag-front.png" class="bag-pic active-bag" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-line"></div>
+      <div class="category-flex">
+        <div class="footer-category">
+          <h4 class="footer-title">ABOUT</h4>
+          <a href="#" class="footer-link">About SILFEN</a>
+          <a href="#" class="footer-link">Certification</a>
+          <a href="#" class="footer-link">Contact us</a>
+        </div>
+
+        <div class="footer-category">
+          <h4 class="footer-title">HELP</h4>
+          <a href="#" class="footer-link">Shipping & Delivery</a>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </div>
+
+        <div class="footer-category">
+          <h4 class="footer-title">LEGAL</h4>
+          <a href="#" class="footer-link">Terms & Conditions</a>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </div>
+
+        <div class="footer-category">
+          <h4 class="footer-title">SOCIAL MEDIA</h4>
+          <div class="footer-pic">
+            <img src="daria-img/insta.svg" class="footer-social" />
+            <img src="daria-img/yt.svg" class="footer-social" />
+            <img src="daria-img/fb.svg" class="footer-social" />
+            <img src="daria-img/linkedin.svg" class="footer-social" />
+          </div>
+        </div>
+
+        <div class="footer-category">
+          <h4 class="footer-title">PAYMENT METHODS</h4>
+          <div class="footer-pic">
+            <img src="daria-img/visa.svg" class="footer-pay" />
+            <img src="daria-img/mastercard.svg" class="footer-pay" />
+            <img src="daria-img/mastercard-2.svg" class="footer-pay" />
+            <img src="daria-img/mobilepay.svg" class="footer-pay" />
+          </div>
+        </div>
+      </div>
+
+      <p class="address-footer">
+        Klareboderne 10, 1, DK-1115 København, <br />
+        Phone: +45 20 51 89 23 l E-mail: info@silfenstudio.com <br />
+        © 2021 Silfen CVR: 40912320. All rights reserved.
+      </p>
+    </footer>
+
+    <script>
+      /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-250px";
+        }
+        prevScrollpos = currentScrollPos;
+
+        if (
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 150
+        ) {
+          document.getElementById("navigation").className = "blurred";
+        } else {
+          document.getElementById("navigation").className = "";
+        }
+      };
+    </script>
+  </body>
+</html>
