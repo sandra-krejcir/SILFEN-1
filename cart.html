@@ -71,48 +71,75 @@
           <button id="remove2">X REMOVE FROM THE CART</button>
         </div>
       </section>
-      <section class="pay instead">
+      <!-- <section class="pay instead">
         <p class="moveRight">COST: <span id="cost">748,50</span> DKK</p>
         <p id="ship">SHIPPING: 35,00 DKK</p>
         <p class="moveRight">
           TOTAL (INCL. VAT): <span id="total">783,50</span> DKK
         </p>
         <button class="moveRight" id="checkout">PROCEED TO CHECKOUT</button>
+      </section> -->
+
+      <section>
+        <div class="payment-total-div">
+          <div class="payment-total-flex-parent">
+            <div class="payment-total-flex">
+              <h4 class="payment-cost">COST</h4>
+              <h4 class="payment-cost"><span id="cost">998</span> DKK</h4>
+            </div>
+            <div class="payment-total-flex">
+              <h4 class="payment-cost">SHIPPING</h4>
+              <h4 class="payment-cost">35 DKK</h4>
+            </div>
+            <div class="payment-total-line"></div>
+            <div class="payment-total-flex">
+              <h4 class="payment-cost">TOTAL COST (INCL. VAT)</h4>
+              <h4 class="payment-cost"><span id="total">71023</span> DKK</h4>
+            </div>
+          </div>
+          <a href="shipping-info.html">
+            <button class="checkout-button" id="checkout">
+              PROCEED TO CHECKOUT
+            </button></a
+          >
+        </div>
       </section>
 
       <div id="footer-placeholder"></div>
 
       <script>
         /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-250px";
-  }
-  prevScrollpos = currentScrollPos;
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-250px";
+          }
+          prevScrollpos = currentScrollPos;
 
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 150) {
-    document.getElementById("navigation").className = "blurred";
-  } else {
-    document.getElementById("navigation").className = "";
-  }
-}
+          if (
+            document.body.scrollTop > 50 ||
+            document.documentElement.scrollTop > 150
+          ) {
+            document.getElementById("navigation").className = "blurred";
+          } else {
+            document.getElementById("navigation").className = "";
+          }
+        };
       </script>
 
-<script src="//code.jquery.com/jquery.min.js"></script>
+      <script src="//code.jquery.com/jquery.min.js"></script>
       <script>
-      $.get("nav.html", function(data){
+        $.get("nav.html", function (data) {
           $("#nav-placeholder").replaceWith(data);
-      });
+        });
 
-      $.get("footer.html", function(data){
+        $.get("footer.html", function (data) {
           $("#footer-placeholder").replaceWith(data);
-      });
+        });
       </script>
-
     </main>
     <script src="cart_java.js"></script>
   </body>
