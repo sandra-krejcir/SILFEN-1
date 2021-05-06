@@ -16,7 +16,6 @@
     <header>
       <div id="nav-placeholder"></div>
     </header>
-    
     <main>
       <h3>COLLECTIONS</h3>
       <h1>SNOW QUEEN</h1>
@@ -56,7 +55,7 @@
           <br /><br />With the new recycled collection you can both look your
           best and keep our planet safe a little more.
           <br />
-          <button><a href="shop_all.html"></a>VIEW THE COLLECTION</button>
+          <button><a href=""></a>VIEW THE COLLECTION</button>
         </p>
       </section>
       <h1>CLASSICS</h1>
@@ -75,12 +74,23 @@
           <br /><br />With the new recycled collection you can both look your
           best and keep our planet safe a little more.
           <br />
-          <button><a href="shop_all.html"></a>VIEW THE COLLECTION</button>
+          <button><a href=""></a>VIEW THE COLLECTION</button>
         </p>
       </section>
-
+    </main>
       <div id="footer-placeholder"></div>
 
+      <script src="//code.jquery.com/jquery.min.js"></script>
+      <script>
+      $.get("nav.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+      });
+      
+      $.get("footer.html", function(data){
+          $("#footer-placeholder").replaceWith(data);
+      });
+      </script>
+      
       <script>
         /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
@@ -101,17 +111,5 @@ window.onscroll = function() {
 }
       </script>
 
-<script src="//code.jquery.com/jquery.min.js"></script>
-      <script>
-      $.get("nav.html", function(data){
-          $("#nav-placeholder").replaceWith(data);
-      });
-
-      $.get("footer.html", function(data){
-          $("#footer-placeholder").replaceWith(data);
-      });
-      </script>
-
-    </main>
   </body>
 </html>
