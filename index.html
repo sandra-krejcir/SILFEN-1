@@ -14,31 +14,10 @@
     </head>
 <body>
 
-    <div id="navbar">
-    <section id="section-announcement" data-section-id="announcement" data-section-type="announcement-bar">
-        <div class="AnnouncementBar">
-            <div class="AnnouncementBar__Wrapper">
-                <p class="AnnouncementBar__Content">
-                    <span>100% SUSTAINABLE PRODUCTION. ALWAYS.</span>
-                </p>
-            </div>
-        </div>
-   
+<header>
+  <div id="nav-placeholder"></div>
+</header>
 
-    <nav id="navigation">
-        <input id="search" type="search" name="search" placeholder="SEARCH by name, color or collection" /> 
-    
-        <img class="logo" src="img/white-logo.svg" alt="logo">
-    <span>CART(0)</span>
-<br>
-    <ul>
-        <li><a href="">SHOP</a></li>
-        <li><a href="">COLLECTIONS</a></li>
-        <li><a href="">NEW IN</a></li>
-        <li><a href="">ABOUT US</a></li>  
-    </ul>
-    </nav>
-</section></div>
 <section>
     <div class="w3-content w3-section">
       
@@ -63,28 +42,6 @@
         <div class="arrow"></div>
       </a>
     </div>
-
-<button id="newsletter" onclick="document.getElementById('id01').style.display='block'">
-</button>
-   
-<div id="id01" class="modal">
-    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-    <form class="modal-content" action="/action_page.php">
-      <div class="container">
-        <h3>join our mailing list</h3>
-        <p class="signuptext">SIGN UP TO RECEIVE EMAIL UPDATES ON NEW PRODUCT ANNOUNCEMENTS, GIFT IDEAS, SPECIAL PROMOTIONS, SALES AND MORE.</p>
-        <hr>
-<input type="text" placeholder="Enter Your Email" name="email" required>
-  
-  
-        <h1>By signing up you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</h1>
-  
-        <div class="clearfix">
-          <button type="submit" class="signupbtn">JOIN</button>
-        </div>
-      </div>
-    </form>
-  </div>
 
 </section>
     
@@ -229,56 +186,20 @@ We hope to see you there.
 </center>
     </section>
 
-    <footer>
-        <div class="footer-line"></div>
-        <div class="category-flex">
-          <div class="footer-category">
-            <h4 class="footer-title">ABOUT</h4>
-            <a href="#" class="footer-link">About SILFEN</a>
-            <a href="#" class="footer-link">Certification</a>
-            <a href="#" class="footer-link">Contact us</a>
-          </div>
+    <div id="footer-placeholder"></div>
+
+      <script src="//code.jquery.com/jquery.min.js"></script>
+      <script>
+      $.get("nav.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+      });
+
+      $.get("footer.html", function(data){
+          $("#footer-placeholder").replaceWith(data);
+      });
+      </script>
       
-          <div class="footer-category">
-            <h4 class="footer-title">HELP</h4>
-            <a href="#" class="footer-link">Shipping & Delivery</a>
-            <a href="#" class="footer-link">Privacy Policy</a>
-          </div>
-      
-          <div class="footer-category">
-            <h4 class="footer-title">LEGAL</h4>
-            <a href="#" class="footer-link">Terms & Conditions</a>
-            <a href="#" class="footer-link">Privacy Policy</a>
-          </div>
-      
-          <div class="footer-category">
-            <h4 class="footer-title">SOCIAL MEDIA</h4>
-            <div class="footer-pic">
-              <img src="img/insta.svg" class="footer-social" />
-              <img src="img/yt.svg" class="footer-social" />
-              <img src="img/fb.svg" class="footer-social" />
-              <img src="img/linkedin.svg" class="footer-social" />
-            </div>
-          </div>
-      
-          <div class="footer-category">
-            <h4 class="footer-title">PAYMENT METHODS</h4>
-            <div class="footer-pic">
-              <img src="img/visa.svg" class="footer-pay" />
-              <img src="img/mastercard.svg" class="footer-pay" />
-              <img src="img/mastercard-2.svg" class="footer-pay" />
-              <img src="img/mobilepay.svg" class="footer-pay" />
-            </div>
-          </div>
-        </div>
-      
-        <p class="address-footer">
-          Klareboderne 10, 1, DK-1115 København, <br />
-          Phone: +45 20 51 89 23 l E-mail: info@silfenstudio.com <br />
-          © 2021 Silfen CVR: 40912320. All rights reserved.
-        </p>
-      </footer>
-    
+
     <script src="index.js"></script>
     <script>
         // Get the modal
