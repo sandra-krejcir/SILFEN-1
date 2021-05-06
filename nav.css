@@ -297,3 +297,7 @@ hr {
      width: 100%;
   }
 }
+
+button a:hover {
+  color: black;
+}
