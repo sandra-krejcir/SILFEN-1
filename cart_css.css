@@ -23,12 +23,16 @@ h4 {
   margin-top: -1vw;
 }
 
-p {
+main p {
   font-family: "Raleway", sans-serif;
   font-size: 1.2vw;
   -webkit-text-stroke: #707070;
   letter-spacing: 2px;
   margin-left: 0.8vw;
+}
+
+main span {
+  color: black;
 }
 
 main img {
