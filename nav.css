@@ -39,7 +39,7 @@ textarea:focus, input:focus{
     margin: 0;
 }
 
-span {
+nav span {
     font-size: 11px;
     letter-spacing: 0.1em;
     text-align: right;
