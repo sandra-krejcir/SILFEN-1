@@ -67,6 +67,17 @@
     </main>
       <div id="footer-placeholder"></div>
 
+      <script src="//code.jquery.com/jquery.min.js"></script>
+      <script>
+      $.get("nav.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+      });
+      
+      $.get("footer.html", function(data){
+          $("#footer-placeholder").replaceWith(data);
+      });
+      </script>
+
       <script>
         /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
@@ -86,17 +97,6 @@ window.onscroll = function() {
   }
 }
       </script>
-
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script>
-$.get("nav.html", function(data){
-    $("#nav-placeholder").replaceWith(data);
-});
-
-$.get("footer.html", function(data){
-    $("#footer-placeholder").replaceWith(data);
-});
-</script>
     
   </body>
 </html>
