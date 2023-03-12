@@ -134,7 +134,7 @@ li {
     letter-spacing: 0.1em;
 }
 
-ul a {
+nav ul a {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -145,7 +145,7 @@ ul a {
     position: relative;
   }
 
-ul a:after {    
+nav ul a:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
